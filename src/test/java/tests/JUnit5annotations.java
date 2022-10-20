@@ -9,14 +9,14 @@ public class JUnit5annotations {
         System.out.println("smth before all Tests");
     }
 
-    @BeforeEach
-    void beforeEach(){
-        System.out.println("smth before every Tests");
-    }
-
     @Test
     void fistTest(){
         System.out.println("Started First Test");
+    }
+
+    @BeforeEach
+    void beforeEach(){
+        System.out.println("smth before every Tests");
     }
 
     @Test
